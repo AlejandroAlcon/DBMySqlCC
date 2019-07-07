@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/editText"
+                android:hint="NOMBRES"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/editText2"
+                android:hint="APELLIDO PATERNO"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/editText3"
+                android:hint="APELLIDO MATERNO"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="GUARDAR"
+                android:onClick="guardar"
+                android:id="@+id/button" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="MOSTRAR"
+                android:onClick="mostrar"
+                android:id="@+id/button2" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/editText4"
+                android:hint="ID (SOLO USAR PARA MODIFICAR)"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="MODIFICAR"
+                android:onClick="modificar"
+                android:id="@+id/button3" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ELIMINAR"
+                android:onClick="eliminar"
+                android:id="@+id/button4" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="LIMPIAR"
+                android:onClick="limpiar"
+                android:id="@+id/button5" />
+            <ImageView
+                android:id="@+id/imageViewPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
